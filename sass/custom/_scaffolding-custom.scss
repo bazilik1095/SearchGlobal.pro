@@ -1,0 +1,263 @@
+
+//
+// Scaffolding
+// --------------------------------------------------
+
+// Reset the box-sizing
+//
+// Heads up! This reset may cause conflicts with some third-party widgets.
+// For recommendations on resolving such conflicts, see
+// http://getbootstrap.com/getting-started/#third-box-sizing
+* {
+	@include box-sizing(border-box);
+}
+
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+
+// Body reset
+
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+	outline: none;
+}
+
+// Page styles
+// --------------------------------------------------
+
+.page {
+	overflow: hidden;
+	background-color: #fff;
+}
+
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: 25px;
+	color: $text-color;
+	background-color: $body-bg;
+}
+
+// Links
+
+a {
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+
+// Horizontal rules
+
+hr {
+	margin-top: 0;
+	margin-bottom: 0;
+	border-top: 1px solid $hr-border;
+}
+
+h1 {
+	font-family: $font-family-sans-serif;
+	font-weight: bold;
+	font-size: $font-size-h1;
+}
+
+h2 {
+	font-family: $font-family-sans-serif;
+	font-weight: 400;
+	font-size: $font-size-h2;
+}
+
+h3 {
+	font-family: $font-family-sans-serif;
+	font-size: $font-size-h3;
+}
+
+h4 {
+	font-family: $font-family-sans-serif;
+	font-size: $font-size-h4;
+}
+
+h5 {
+	font-family: $font-family-sans-serif;
+	font-size: $font-size-h5;
+	font-weight: 500;
+	line-height: 22px;
+}
+
+h6 {
+	font-family: $font-family-sans-serif;
+	font-size: $font-size-h6;
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: calc(#{$font-size-h1} * 0.48);
+		line-height: 33px;
+	}
+
+	h2 {
+		font-size: calc(#{$font-size-h2} * 0.6);
+		line-height: 24px;
+	}
+
+	h4 {
+		font-size: calc(#{$font-size-h1} * 0.8);
+	}
+
+	h5 {
+		font-size: calc(#{$font-size-h5} * 0.79);
+	}
+}
+	@media (max-width: 450px) {
+		p {
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+
+p {
+	color: $text-color;
+}
+
+.navigation {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	font-size: $font-size-h4;
+	line-height: 25px;
+
+}
+
+.bg-image-1 {
+	background-image: url(../images/header__bg.png);
+	background-color: $text-color-w;
+}
+.mobile-search-img {
+	display: none;
+    @media (max-width: 450px) {
+    	display: block;
+		max-width: 100%;
+		margin-top:9px!important;
+	}
+}
+.img-search {
+	@media (max-width: 450px) {
+    	display: none;
+	}
+}
+.bg-responsive {
+	background-size: cover;
+	background-position: bottom center;
+}
+
+
+.section-about {
+	.row{
+		@media (max-width: 450px) { 
+			text-align: center;
+		}
+	}
+	padding-top: 200px;
+	padding-bottom: 26px;
+	@media (max-width: 450px) { 
+		padding-top: 123px;
+	}
+	h1 {
+		margin-top: 119px;
+		margin-bottom: 50px;
+	@media (max-width: 1024px) { 
+		margin-top: 59px;
+	}	
+	@media (max-width: 450px) { 
+		margin-top: 0;
+		margin-bottom:16px;
+	}
+	}
+
+	h1 + p {
+		margin-top: 51px;
+		@media (max-width: 768px) { 
+			margin-top: 0;
+		}
+	}
+	h3 {
+		@media (max-width: 450px) {
+			margin: 0;
+		}
+	}
+	h5{
+		margin-top: 0;
+	}
+	a{	
+		margin-bottom: 24px;
+   	 	margin-top: 78px;
+	    @media (max-width: 768px) { 
+			margin-bottom: 5px;
+    		margin-top: 29px;
+		}
+		display: block;
+		.img-app {
+			@media (max-width: 768px) { 
+				max-width: 217px;
+			}
+		}
+	}
+	.second-row {
+		padding-top: 39px;
+		@media (max-width: 450px) {
+		padding-top: 0;
+		text-align: left;
+	}
+	h3:after {
+		 content:'';
+		 display: block;
+		 width: 4px;
+		 height: 112px;
+		 background-color: #9CDCD0;
+		 position: absolute;
+		 top: 6px;
+		 right: -44px;	
+		 @media (max-width: 1024px) { 
+		right: -90px;	
+	}
+	@media (max-width: 450px) {
+		width: 112px;
+	    height: 4px;
+	    left: 16px;
+	    top: auto;
+	    bottom: 17px;
+	}
+		}
+		h3 {
+			@media (max-width: 450px) {
+			margin-bottom: 30px;
+
+	}
+		}
+	}
+	.second-row-p {
+		p {
+		margin-bottom: 26px;
+			a{
+	    		text-decoration: underline;
+	  		}
+		}
+		padding-left: 64px;
+		@media (max-width: 1024px) { 
+		padding-left: 110px;
+	}
+	@media (max-width: 450px) {
+		padding-left: 15px;
+	}
+	}
+}

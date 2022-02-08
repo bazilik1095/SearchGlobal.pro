@@ -1,0 +1,58 @@
+.page-header {
+	position: absolute;
+	padding-top: 25px;
+	padding-bottom: 16px;
+	background-color: rgba(255, 255, 255, 0.15);
+	z-index: 2;
+	backdrop-filter: blur(65px);
+	width: 100%;
+	@media (max-width: 450px) {
+			padding-top: 12px;
+			padding-bottom: 10px;
+
+		}
+
+
+	.site-logo{
+		max-width: 100%;
+		display: inline-block;
+		margin-bottom: 20px;
+
+		@media (min-width: 544px) {
+			margin-bottom: 0;
+		}
+		@media (max-width: 450px) {
+			margin-bottom: 0;
+			max-width:146px;
+		}
+		img{
+			max-width: 100%;
+		}
+	}
+
+
+
+img {
+	padding-top: 4px ;
+}
+	.navigation {
+		ul {
+			display: flex;
+			justify-content: flex-end;
+			align-items: right;
+
+		}
+		a {
+			padding: 20px 0;
+			font-size: $font-size-h4;
+			line-height: 1.2;
+			font-weight: $font-weight-reg;
+			display: inline-block;
+			@media (max-width: 450px) {
+			padding: 4px 0;
+			font-size: 16px;
+		}
+
+		}
+	}
+}

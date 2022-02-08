@@ -1,0 +1,55 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+
+//== Iconography
+//
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+
+//** Load fonts from this directory.
+$icon-font-path: "../fonts/";
+
+//** File name for all font files.
+$icon-font-name:           "glyphicons-halflings-regular";
+$icon-font-awesome:        "fontawesome-webfont";
+$icon-material-design:     "materialdesignicons-webfont";
+
+//** Element ID within SVG icon file.
+$icon-font-svg-id:         "glyphicons_halflingsregular";
+$icon-font-awesome-id:     "fontawesomeregular";
+$icon-material-design-id:  "materialdesigniconsregular";
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Inter", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          16px !default;
+
+$font-size-h1:           56px; 
+$font-size-h2:           31px; 
+$font-size-h3:           28px; 
+$font-size-h4:           21px; 
+$font-size-h5:           18px;
+$font-size-h6:           12px; 
+
+$primary-color: #272727;
+$secondary-color: #000000;
+$text-color: #272727;
+$text-color-w: #fff;
+$invert-text-color: #fff;
+$text-color-b: #000;
+$text-color-g: #949393;
+$bg-black: #fff;
+$font-weight-reg: 600;
+$font-weight-bold: 700;
+
+@import "bootstrap/variables";

@@ -1,0 +1,234 @@
+//
+// Custom typography
+// --------------------------------------------------
+
+// Page
+// -------------------------
+
+.page {
+  overflow: hidden;
+}
+
+// Page header
+// -------------------------
+
+.page-header {
+  background: $bg-black;
+}
+ 
+// Fonts
+// -------------------------
+
+.font-default {
+  font-family: $font-family-base;
+}
+
+// Basic Typography
+// -------------------------
+
+
+h1,
+.h1 {
+  font-size: 56px;
+  line-height: 68px;
+
+
+}
+
+h2,
+.h2 {
+  font-size: 31px;
+  line-height: 45px;
+
+
+}
+
+h3,
+.h3 {
+  font-size: 28px;
+  line-height: 1.5;
+
+
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+  line-height: 1.5;
+
+
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  line-height: 1.5;
+
+}
+
+h6,
+.h6 {
+  font-size: 17px;
+  line-height: 1.5;
+
+
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: $text-color-b;
+
+  a {
+    transition: .3s all ease;
+  }
+
+}
+
+
+.invert{
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    color: $text-color-w;
+  }
+
+  p{
+    color: $invert-text-color;
+  }
+}
+
+p,
+.p,
+.list {
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: $primary-color;
+  transition: all 0.3s ease-out;
+}
+
+.page{
+  a:hover{
+    color: $primary-color;
+    opacity: 0.8;
+    transition: all 0.3s ease-out;
+
+
+  }
+  .section-team a:hover{
+    color: $text-color-g;
+  }
+
+}
+
+
+
+// Lists
+// -------------------------
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  > li + li {
+    margin-top: 10px;
+  }
+}
+
+// List inline
+//
+
+.list-inline {
+  margin-left: -5px;
+  margin-right: -5px;
+
+  > li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+
+// Description Lists
+dl {
+  margin: 0;
+}
+
+// List terms
+//
+
+.list-terms {
+  margin-top: 35px;
+  dt + dd { margin-top: 5px; }
+  dd + dt { margin-top: 25px; }
+}
+
+
+
+// Misc
+// -------------------------
+
+// Blockquotes
+blockquote {
+   q{
+      &:before,
+      &:after{ content: none; }
+   }
+  cite { font-style: normal; }
+}
+
+// Addresses
+address {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+// Helpers
+// -------------------------
+
+.text-right{
+  text-align: right;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-sm-center{
+  @media (min-width: 767px) {
+    text-align: center;
+  }
+}
+
+.text-sm-left{
+  @media (min-width: 767px) {
+    text-align: left;
+  }
+}
+
+.bg-dark{
+  background: $bg-black;
+}
+.bg-yellow{
+  background-color: $secondary-color;
+}
+
+.text-primary{
+  color: $primary-color;
+}
